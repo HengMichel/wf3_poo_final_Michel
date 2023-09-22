@@ -1,0 +1,8 @@
+# activer la regle de reecriture d'url
+RewriteEngine On
+
+# rediriger vers le dossier views
+RewriteRule ^(.*)$ views/$1 [L]
+# le ^ est une expression régulière et fini par $ 
+# . regroupe tous les caractère
+#$1 est une varaible qui stock les valeurs inscrit dans l'url
