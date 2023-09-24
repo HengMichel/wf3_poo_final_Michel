@@ -23,9 +23,9 @@ $MatchsSortedByStartDateDesc = Contest::findAllMatchsSortedByStartDateDesc();
         <tbody>
             <?php foreach($joueurList as $joueur){ ?>
                 <tr>
-                    <td><?= $joueur['id_player']; ?></td>
-                    <td><?= $joueur['email']; ?></td>
-                    <td><?= $joueur['nickname']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black"><?= $joueur['id_player']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black"><?= $joueur['email']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black"><?= $joueur['nickname']; ?></td>
                 </tr>
             <?php } ?>
         </tbody>
@@ -33,23 +33,39 @@ $MatchsSortedByStartDateDesc = Contest::findAllMatchsSortedByStartDateDesc();
 </div>
 
 <div class="container mb-5">
-    <h2 class="m-5">Liste des jeux</h2>
+    <h2 class="m-5  link-warning bg-black">Liste des jeux</h2>
     <table class="table">
         <thead>
             <tr>
-                <th>Id Jeu</th>
-                <th>Title</th>
-                <th>Min joueur</th>
-                <th>Max joueur</th>
+                <th class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black">Id Jeu</th>
+                <th class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black">Title</th>
+                <th class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black">Min joueur</th>
+                <th class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black">Max joueur</th>
             </tr>
         </thead>
         <tbody>
             <?php foreach($jeuList as $jeu){ ?>
                 <tr>
-                    <td><?= $jeu['id_game']; ?></td>
-                    <td><?= $jeu['title']; ?></td>
-                    <td><?= $jeu['min_players']; ?></td>
-                    <td><?= $jeu['max_players']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black"><?= $jeu['id_game']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black"><?= $jeu['title']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black"><?= $jeu['min_players']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black"><?= $jeu['max_players']; ?></td>
                 </tr>
             <?php } ?>
         </tbody>
@@ -57,23 +73,35 @@ $MatchsSortedByStartDateDesc = Contest::findAllMatchsSortedByStartDateDesc();
 </div>
 
 <div class="container">
-    <h1 class="m-5">Liste de match</h1>
+    <h1 class="m-5 link-warning bg-black">Liste de match</h1>
     <table class="table">
         <thead>
             <tr>
-                <th>Nom du Jeu</th>
-                <th>Nbr de joueurs enregistrés :</th>
-                <th>Date de démarrage:</th>
-                <th>Pseudonyme du gagnant du match :</th>
+                <th class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black">Nom du Jeu</th>
+                <th class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black">Nbr de joueurs enregistrés :</th>
+                <th class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black">Date de démarrage:</th>
+                <th class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black">Pseudonyme du gagnant du match :</th>
             </tr>
         </thead>
         <tbody>
             <?php foreach($matchList as $match){ ?>
                 <tr>
-                    <td><?= $match['title']; ?></td>
-                    <td><?= $match['nombre_de_joueurs']; ?></td>
-                    <td><?= $match['start_date']; ?></td>
-                    <td><?= $match['nickname']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black"><?= $match['title']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black"><?= $match['nombre_de_joueurs']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black"><?= $match['start_date']; ?></td>
+                    <td class="border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black
+border-warning border-3 mt-2 link-warning bg-black"><?= $match['nickname']; ?></td>
                     <?php } ?>
                 </tr>
         </tbody>
