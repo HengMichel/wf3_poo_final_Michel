@@ -11,13 +11,13 @@ $MatchsSortedByStartDateDesc = Contest::findAllMatchsSortedByStartDateDesc();
 ?>
 
 <div class="container mb-5">
-    <h2 class="m-5">Liste des joueurs</h2>
-    <table class="table">
+    <h2 class="m-5 link-warning">Liste des joueurs</h2>
+    <table class="table bg-black link-warning">
         <thead>
             <tr>
-                <th>Id Joueur</th>
-                <th>Email</th>
-                <th>Nickname</th>
+                <th class="link-warning bg-black">Id Joueur</th>
+                <th class="link-warning bg-black">Email</th>
+                <th class="link-warning bg-black">Nickname</th>
             </tr>
         </thead>
         <tbody>

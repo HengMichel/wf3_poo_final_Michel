@@ -12,10 +12,10 @@ $matchList = Contest::findAllTables();
     <table class="table">
         <thead>
             <tr>
-                <th>Nom du Jeu</th>
-                <th>Nbr de joueurs enregistrés :</th>
-                <th>Date de démarrage:</th>
-                <th>Pseudonyme du gagnant du match :</th>
+                <th class="border-3 link-warning">Nom du Jeu</th>
+                <th class="border-3 link-warning">Nbr de joueurs enregistrés :</th>
+                <th class="border-3 link-warning">Date de démarrage:</th>
+                <th class="border-3 link-warning">Pseudonyme du gagnant du match :</th>
             </tr>
         </thead>
         <tbody>
@@ -32,12 +32,12 @@ $matchList = Contest::findAllTables();
 
 
                 <tr>
-                    <td><?= $match['title']; ?></td>
-                    <td><?= $match['nombre_de_joueurs']; ?></td>
-                    <td><?= $match['start_date']; ?></td>
-                    <td><?= $match['nickname']; ?></td>
+                    <td class="border-3 link-warning"><?= $match['title']; ?></td>
+                    <td class="border-3 link-warning"><?= $match['nombre_de_joueurs']; ?></td>
+                    <td class="border-3 link-warning"><?= $match['start_date']; ?></td>
+                    <td class="border-3 link-warning"><?= $match['nickname']; ?></td>
           
-                    <td><a href="traitement/action.php?idmatch=<?= $match['id_contest']; ?>">Delete</a></td>
+                    <td><a class="border-3 link-warning" href="traitement/action.php?idmatch=<?= $match['id_contest']; ?>">Delete</a></td>
                 </tr>
             <?php } ?>
         </tbody>
