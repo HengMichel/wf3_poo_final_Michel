@@ -8,14 +8,14 @@ $matchList = Contest::findAllTables();
 ?>
 
 <div class="container">
-    <h1 class="m-5">Liste de match</h1>
+    <h1 class="m-5 link-warning">Liste de match</h1>
     <table class="table">
         <thead>
             <tr>
-                <th class="border-3 link-warning">Nom du Jeu</th>
-                <th class="border-3 link-warning">Nbr de joueurs enregistrés :</th>
-                <th class="border-3 link-warning">Date de démarrage:</th>
-                <th class="border-3 link-warning">Pseudonyme du gagnant du match :</th>
+                <th class="border-warning border-3 link-warning bg-black">Nom du Jeu</th>
+                <th class="border-warning border-3 link-warning bg-black">Nbr de joueurs enregistrés :</th>
+                <th class="border-warning border-3 link-warning bg-black">Date de démarrage:</th>
+                <th class="border-warning border-3 link-warning bg-black">Pseudonyme du gagnant du match :</th>
             </tr>
         </thead>
         <tbody>
@@ -32,12 +32,12 @@ $matchList = Contest::findAllTables();
 
 
                 <tr>
-                    <td class="border-3 link-warning"><?= $match['title']; ?></td>
-                    <td class="border-3 link-warning"><?= $match['nombre_de_joueurs']; ?></td>
-                    <td class="border-3 link-warning"><?= $match['start_date']; ?></td>
-                    <td class="border-3 link-warning"><?= $match['nickname']; ?></td>
+                    <td class="border-warning border-3 link-warning bg-black"><?= $match['title']; ?></td>
+                    <td class="border-warning border-3 link-warning bg-black"><?= $match['nombre_de_joueurs']; ?></td>
+                    <td class="border-warning border-3 link-warning bg-black"><?= $match['start_date']; ?></td>
+                    <td class="border-warning border-3 link-warning bg-black"><?= $match['nickname']; ?></td>
           
-                    <td><a class="border-3 link-warning" href="traitement/action.php?idmatch=<?= $match['id_contest']; ?>">Delete</a></td>
+                    <td class="bg-black border-warning"><a class="border-warning border-3 link-warning bg-black" href="traitement/action.php?idmatch=<?= $match['id_contest']; ?>">Delete</a></td>
                 </tr>
             <?php } ?>
         </tbody>
