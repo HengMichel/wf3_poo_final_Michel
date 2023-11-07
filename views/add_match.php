@@ -25,7 +25,6 @@ if (isset($_GET['id_match'])) {
             <input type="date" class="form-control text-uppercase"  name="start_date" value="<?= !empty($match) ? $match["start_date"] : "" ?>">
         </div>
 
-
         <div class="form-group  mb-3">
             <label class="m-2 link-warning">Winner id :</label>
             <input type="number" class="form-control text-uppercase" name="winner_id" value="<?= !empty($match) ? $match["winner_id"] : "" ?>">
